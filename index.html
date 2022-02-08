@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Abaixo declaramos a linguagem usada no arquivo, no caso de português usamos pr-BR -->
+<html lang="pt-BR">
+    <head>
+        <title>Minha página</title>
+        <!-- Aqui declaramos primeiro em charset o tipo de codificação usada, utf-8 é a mais comum, usa caracteres de até 8 bytes-->
+        <meta charset="utf-8">
+        <!-- Aqui apontamos o arquivo bootstrap que contém as instruções do framework e está baixado na pasta bootstrap-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/css/bootstrap.min.css">
+        <!-- Aqui apontamos o arquivo CSS que criamos para estilização, criamos a pasta CSS e adc o arquivo style.css dentro dela-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- Vamos criar aqui a nossa BARRA DE NAVEGAÇÃO usando o Bootstrap - Biblioteca Bootstrap > Documentation > Components > NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <!--Acima temos: navbar-expand-lg: barra de navegação grande LG(large) / navbar-light: fundo claro-->
+        <a class="navbar-brand" href="#"><!--Declara o primeiro link a ser colocado na navbar, normalmente leva a logo da empresa-->
+            <img src="img/Dio.jpg" width="80" height="50"> <!--Adiciona uma imagem para o link citado acima-->
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav"> <!--Início da criação dos itens do menu/navbar, ul é a lista e cada <li> é um link/item da lista-->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#quemsomos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#parceiros">Parceiros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#servicos">Serviços</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="quemsomos"><!--Cria uma nova seção para linkar no Quem Somos-->
+        <div class="container-fluid quem-somos text-center margin1"> <!--Container cria uma caixa colorida com recuo, já container-fluid cria uma caixa colorida de fora a fora do body-->
+            <h3 class="titulo-quemsomos">Quem Somos</h3>
+            <img src="img/ideias.jpg" class="rounded-circle" width="300" height="300"> <!--Adc imagem e coloca ela redonda com atributos do bootstrap pré-definidos-->
+            <h6 class="texto-quemsomos">Somos um time comprometido com resultados</h1>
+        </div> 
+    </section>
+    <selection id="parceiros">
+        <div class="container-fluid text-center margin2 parceiros">
+            <h3>Parceiros</h3>
+            <div class="container"><!--Cria uma caixa container com atributos de row e col, linhas e colunas, o que pode segmentar o body em até 12 partes e fazer com que sejam boxs onde você pode inserir texto, imagem, etc.-->
+                <div class="row"><!--Primeira classe ROW adiciona uma linha horizontal-->
+                    <div class="col-lg-4"><!--Segunda classe COL que adiciona, nesse caso, uma célula lg(large)-->
+                        <img src="img/code.jpg" width="100%"><!--Adc uma imagem dentro do container subdividido-->
+                    </div>
+                    <div class="col-lg-4"><!--Adc outro container ao lado do supracitado com as mesmas características. O container pode ser lg(large), md (medium), sm (small) de acordo com as configurações do bootstrap-->
+                        <img src="img/code.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/code.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </selection>
+    <section>
+        <div class="container-fluir text-center margin3 servicos">
+            <h3>Serviços</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h6>Serviço prestado 1</h6>
+                        <img src="img/computador.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-6">
+                        <h6>Serviço prestado 2</h6>
+                        <img src="img/computador.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="container-fluid text-center bg-footer"> Desenvolvido por Mariana Rocha</p>
+    </footer>
+    </body>
+</html>

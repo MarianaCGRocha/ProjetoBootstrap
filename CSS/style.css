@@ -1,0 +1,34 @@
+body {
+    font: 20px Arial, sans-serif;
+    background-color: #a8a8a8;
+}
+.navbar {
+    background-color: #a8a8a8;
+}
+.container-fluid {
+    background-color: #cccccc;
+}
+.margin1 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.margin2 {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+.margin3 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.texto-quemsomos {
+    padding-top: 20px;
+    color: #2e2e2e
+}
+.titulo-quemsomos {
+    padding-bottom: 20px;
+}
+.bg-footer {
+    background-color: #cccccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
